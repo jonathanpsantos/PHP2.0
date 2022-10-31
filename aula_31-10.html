@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exemplo de Formulário</title>
+</head>
+<body>
+	<h2>Exemplo de Formulário</h2>
+	<form name="cadastro" method="nome" action="pagina_from.php">
+		Nome: <input type="text" name="nome" size="40" maxlength="20"> <br/><br/> 
+		Senha:<input type="password" name="senha" size="40" maxlength="20"><br/><br/>
+		<input type="checkbox" name="termouso" value="termo"/>
+		Aceito o termo de uso <br/><br/>
+		<input type="radio" name="sexo" value="fem"/> Feminino
+		<input type="radio" name="sexo" value="mas"/> Masculino
+		<br/>
+		<input type="hidden" name="login" value="admin">
+		<br/>
+		&nbsp;&nbsp;&nbsp;
+		<input type="button" name="VOLTAR">
+		&nbsp;&nbsp;&nbsp;
+		<input type="reset" name="LIMPAR">
+		&nbsp;&nbsp;&nbsp;
+		<input type="submit" name="ENVIAR">
+		<br/><br/> <br/><br/> 
+
+
+	<h2>Formulario - Limpa campos </h2>
+	
+		Nome: <input type="type" name="nome" size=" 40" maxlength="20"> <br/><br/>
+		<input type="submit" name="ENVIAR">
+
+		<button onclick="window.location.href=´https://www.google.com.br´ ">Google</button>
+		<button onclick="window.location.reload()">Atualizar a página</button>
+		<button onclick="window.print()">Imprimir</button>
+		<button onclick="window.history.back()">Voltar</button>
+		<br/>
+		<br/>
+		<br/><br/> 
+
+
+		<h2>Formulario - Caixa de seleção</h2>
+		Animais: 
+		<select name="Animais">
+			<option> Elefante </option>
+			<option> Hipopótamo </option>
+			<option> Rinoceronte </option>
+			<option> Dinossauro </option>
+		</select>
+		<br/>
+		<br/>
+		<input type="submit" name="ENVIAR">
+		<br/>
+		<br/>
+
+		
+
+		<h2>Formulário - Caixa de seleção - pré-Selecionado</h2>
+		Animais: 
+		<select name="animais">
+			<option value="elef"> Elefante </option>
+			<option value="hipo"> Hipopótamo </option>
+			<option value="dino" selected="true"> Dinossauro </option>
+			<option value="rino"> Rinoceronte </option>
+
+		</select>
+		<br/>
+		<br/>
+		<input type="submit" name="ENVIAR">
+
+		<br/><br/> <br/><br/> 
+
+		<h2>Formulário - textarea</h2>
+		<textarea name="msg" cols="50" rows="8"> 
+			</textarea>
+			<br/><br/> 
+			<input type="submit" name="ENVIAR">
+		
+			
+
+
+		</form>
+
+	</form>
+
+
+</body>
+</html>
